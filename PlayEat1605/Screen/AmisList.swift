@@ -8,63 +8,83 @@
 import SwiftUI
 
 struct AmisList: View {
+    
+    @State var searchText : String
+    
+    var searchResult: [Amis] {
+                if searchText.isEmpty {
+                    return listAmis
+                } else {
+                    return listAmis.filter { $0.name.lowercased().contains(searchText.lowercased()) }
+                }
+            }
+
     var body: some View {
            NavigationView{
-               List(listAmis) { friend in
-                   NavigationLink(destination: {
-                       AmisChats(friend: friend)
-                   }, label: {
-                       HStack{
-                       Image(friend.photoAmis)
-                               .resizable()
-                               .scaledToFill()
-                               .frame(width: 50, height: 50)
-                               .clipShape(Circle())
-                               .shadow(radius:5)
-                       Text(friend.name)
-                               .foregroundColor(Color("purplelight"))
-                               .bold()
+               VStack(alignment: .center, spacing: 10) {
+                   
+                   Text("Mes Amis")
+                       .foregroundColor(.accentColor)
+                       .font(.title)
+                       .fontWeight(.bold)
+                   
+                   SearchBar(search: $searchText)
 
-                       }
-                   })
-
-
-
-               
-               }
-//               .padding(.top)
-               .navigationBarTitle("")
-               .toolbar {
-                   HStack{
-                       Spacer()
+                   HStack {
                        Text("Mes Amis")
-                           .font(.system(size: 30))
+                           .font(.system(size: 18))
                            .foregroundColor(.accentColor)
-                           .shadow(radius: 5)
+                           .fontWeight(.bold)
+                           .padding(10)
                        Spacer()
-                       Button(action: {
-//                           MonProfilView()
-                           
-                       }, label: {
-                           Image(profilUser.maPhotoDeProfil)
-                               .resizable()
-                               .scaledToFill()
-                               .frame(width: 60, height: 60)
-                               .clipShape(Circle())
-                               .shadow(color: .accentColor, radius: 6)
-                               .padding(5)
-                               .background(Color.white)
-                               .clipShape(Circle())
-
-                       })
-                      
                    }
-                   .padding(.top, 25)
+                   ScrollView(.horizontal, showsIndicators: false){
+
+                       HStack{
+                           
+                           ForEach(searchResult) { profil in
+                   ListHorizontale(friend: profil)
+                           }
+                       }
+                       .padding(.leading, 10)
+                       .searchable(text: $searchText)
+
+                   }
+                   
+                   HStack {
+                       Text("Conversations")
+                           .font(.system(size:18))
+                           .foregroundColor(.accentColor)
+                           .fontWeight(.bold)
+                           .padding(10)
+                       Spacer()
+                   }
+                   
+                   ScrollView(.vertical, showsIndicators: false){
+
+                       VStack{
+                           
+                           ForEach(searchResult) { profilB in
+                               
+                               NavigationLink(destination: {
+                                   AmisChats(friend: profilB)
+                               }, label: {
+                               ListVerticale(friend: profilB)
+                               })
+                               Divider()
+                           }
+                           Spacer()
+                       }
+                       .padding(.top, 2)
+                   }
+                   
                    
                }
+               
+               .navigationBarHidden(true)
            }
 
-
+           
 
 
        }
@@ -73,6 +93,6 @@ struct AmisList: View {
 
    struct AmisList_Previews: PreviewProvider {
        static var previews: some View {
-           AmisList()
+           AmisList(searchText: "")
        }
    }

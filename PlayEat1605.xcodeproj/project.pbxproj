@@ -30,6 +30,9 @@
 		7175E2EC2833D12900E11DBB /* StructFav.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7175E2E92833D12900E11DBB /* StructFav.swift */; };
 		7175E2ED2833D12900E11DBB /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7175E2EA2833D12900E11DBB /* Models.swift */; };
 		7175E2EE2833D12900E11DBB /* DataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7175E2EB2833D12900E11DBB /* DataBase.swift */; };
+		C8BF69ED2877457900719F35 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BF69EC2877457900719F35 /* SearchBar.swift */; };
+		C8BF69EF2877460100719F35 /* ListHorizontale.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BF69EE2877460100719F35 /* ListHorizontale.swift */; };
+		C8BF69F12877491B00719F35 /* ListVerticale.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BF69F02877491B00719F35 /* ListVerticale.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +61,9 @@
 		7175E2E92833D12900E11DBB /* StructFav.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructFav.swift; sourceTree = "<group>"; };
 		7175E2EA2833D12900E11DBB /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		7175E2EB2833D12900E11DBB /* DataBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataBase.swift; sourceTree = "<group>"; };
+		C8BF69EC2877457900719F35 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		C8BF69EE2877460100719F35 /* ListHorizontale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListHorizontale.swift; sourceTree = "<group>"; };
+		C8BF69F02877491B00719F35 /* ListVerticale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListVerticale.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +152,9 @@
 			isa = PBXGroup;
 			children = (
 				4FC240682833D4290090868A /* BlurViewfin.swift */,
+				C8BF69EC2877457900719F35 /* SearchBar.swift */,
+				C8BF69EE2877460100719F35 /* ListHorizontale.swift */,
+				C8BF69F02877491B00719F35 /* ListVerticale.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -223,12 +232,15 @@
 				7175E2E62833D0BF00E11DBB /* RecetteDetail.swift in Sources */,
 				7175E2E12833D0BF00E11DBB /* RecetteList.swift in Sources */,
 				7175E2DD2833D0BF00E11DBB /* FavorisAmi.swift in Sources */,
+				C8BF69EF2877460100719F35 /* ListHorizontale.swift in Sources */,
 				4FC2406D2833D6440090868A /* RecettesDifficulte.swift in Sources */,
 				4FC240692833D4290090868A /* BlurViewfin.swift in Sources */,
 				7175E2DC2833D0BF00E11DBB /* EditMyProfile.swift in Sources */,
 				4FD798FA2835185700F68A23 /* RecetteDuree.swift in Sources */,
 				7175E2EE2833D12900E11DBB /* DataBase.swift in Sources */,
+				C8BF69F12877491B00719F35 /* ListVerticale.swift in Sources */,
 				7175E2DE2833D0BF00E11DBB /* MonProfilView.swift in Sources */,
+				C8BF69ED2877457900719F35 /* SearchBar.swift in Sources */,
 				7175E2E22833D0BF00E11DBB /* AmisList.swift in Sources */,
 				7175E2CC2833D09100E11DBB /* Classement.swift in Sources */,
 				7175E2E42833D0BF00E11DBB /* AmisChats.swift in Sources */,

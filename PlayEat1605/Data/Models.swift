@@ -11,11 +11,11 @@ import SwiftUI
 
 
 enum Pays: String {
-    case france
-    case maroc
-    case cameroun
-    case italie
-    case benin
+    case france = "France"
+    case maroc = "Maroc"
+    case cameroun = "Cameroun"
+    case italie = "Italie"
+    case benin = "Bénin"
     
     var drapeau: (name: String, image: String) {
             switch self {

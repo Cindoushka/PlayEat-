@@ -23,7 +23,7 @@ struct ContentView: View {
                 .tabItem {
                     Label("Classement", systemImage: "rosette")
                 }
-            AmisList()
+            AmisList(searchText: "")
                 .tabItem {
                     Label("Amis", systemImage: "person.3.fill")
                 }
