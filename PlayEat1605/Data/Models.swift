@@ -157,7 +157,11 @@ struct Amis: Identifiable {
     var name: String
     var point: Int
     var conversation: [String]
-    var photoAmis: String 
+    var photoAmis: String
+    var amisCouv: String
+    var amisBio: String
+    var nmbreRecettes: Int
+    var nmbreAmis: Int
 }
 
 enum BubllePosition {

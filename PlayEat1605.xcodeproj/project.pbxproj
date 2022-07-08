@@ -30,6 +30,7 @@
 		7175E2EC2833D12900E11DBB /* StructFav.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7175E2E92833D12900E11DBB /* StructFav.swift */; };
 		7175E2ED2833D12900E11DBB /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7175E2EA2833D12900E11DBB /* Models.swift */; };
 		7175E2EE2833D12900E11DBB /* DataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7175E2EB2833D12900E11DBB /* DataBase.swift */; };
+		C870372D2878654400D66ABB /* ProfilAmis.swift in Sources */ = {isa = PBXBuildFile; fileRef = C870372C2878654400D66ABB /* ProfilAmis.swift */; };
 		C8BF69ED2877457900719F35 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BF69EC2877457900719F35 /* SearchBar.swift */; };
 		C8BF69EF2877460100719F35 /* ListHorizontale.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BF69EE2877460100719F35 /* ListHorizontale.swift */; };
 		C8BF69F12877491B00719F35 /* ListVerticale.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BF69F02877491B00719F35 /* ListVerticale.swift */; };
@@ -61,6 +62,7 @@
 		7175E2E92833D12900E11DBB /* StructFav.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructFav.swift; sourceTree = "<group>"; };
 		7175E2EA2833D12900E11DBB /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		7175E2EB2833D12900E11DBB /* DataBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataBase.swift; sourceTree = "<group>"; };
+		C870372C2878654400D66ABB /* ProfilAmis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilAmis.swift; sourceTree = "<group>"; };
 		C8BF69EC2877457900719F35 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		C8BF69EE2877460100719F35 /* ListHorizontale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListHorizontale.swift; sourceTree = "<group>"; };
 		C8BF69F02877491B00719F35 /* ListVerticale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListVerticale.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				7175E2D92833D0BF00E11DBB /* FavorisRecettes.swift */,
 				7175E2D42833D0BF00E11DBB /* MesPhotosCuisine.swift */,
 				7175E2D22833D0BF00E11DBB /* MonProfilView.swift */,
+				C870372C2878654400D66ABB /* ProfilAmis.swift */,
 				7175E2DA2833D0BF00E11DBB /* RecetteDetail.swift */,
 				7175E2D52833D0BF00E11DBB /* RecetteList.swift */,
 				7175E2D32833D0BF00E11DBB /* RecettesRealisees.swift */,
@@ -240,6 +243,7 @@
 				7175E2EE2833D12900E11DBB /* DataBase.swift in Sources */,
 				C8BF69F12877491B00719F35 /* ListVerticale.swift in Sources */,
 				7175E2DE2833D0BF00E11DBB /* MonProfilView.swift in Sources */,
+				C870372D2878654400D66ABB /* ProfilAmis.swift in Sources */,
 				C8BF69ED2877457900719F35 /* SearchBar.swift in Sources */,
 				7175E2E22833D0BF00E11DBB /* AmisList.swift in Sources */,
 				7175E2CC2833D09100E11DBB /* Classement.swift in Sources */,

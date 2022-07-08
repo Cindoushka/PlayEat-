@@ -27,7 +27,7 @@ struct ListVerticale: View {
                         VStack(alignment: .leading, spacing: -8) {
                             Text(friend.name)
                                 .font(.title2)
-                                .foregroundColor(.accentColor)
+                                .foregroundColor(Color("purplelight"))
                                 .bold()
                             
                             if friend.conversation.isEmpty {

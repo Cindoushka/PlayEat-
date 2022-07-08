@@ -31,7 +31,7 @@ struct RecettesRealisees: View {
                 LazyVGrid(columns: columns, alignment: .center, spacing: 20) {
                     ForEach(recipeDone) { item in
                         
-//                        NavigationLink(destination: {RecetteDetail(recette: item )}, label: {
+                        NavigationLink(destination: {RecetteDetail(recette: item )}, label: {
                             
                             VStack(spacing: 10) {
                                 Image(item.imageRecette)
@@ -47,7 +47,7 @@ struct RecettesRealisees: View {
                                     .multilineTextAlignment(.center)
                                 
                             }
-//                        } )
+                        } )
   
                     }
                     .padding(.horizontal)

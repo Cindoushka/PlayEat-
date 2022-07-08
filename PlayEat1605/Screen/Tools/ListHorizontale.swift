@@ -23,7 +23,7 @@ struct ListHorizontale: View {
                     .shadow(color: .gray, radius: 5, x: 0, y: 5)
                     
                     Text(friend.name)
-                        .foregroundColor(.gray)
+                        .foregroundColor(Color("purplelight"))
                         .fontWeight(.semibold)
                 
             }

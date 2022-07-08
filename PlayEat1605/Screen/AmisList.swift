@@ -43,7 +43,11 @@ struct AmisList: View {
                        HStack{
                            
                            ForEach(searchResult) { profil in
+                               NavigationLink(destination: {
+                                   ProfilAmis(friend: profil)
+                               }, label: {
                    ListHorizontale(friend: profil)
+                               })
                            }
                        }
                        .padding(.leading, 10)
@@ -76,6 +80,8 @@ struct AmisList: View {
                            Spacer()
                        }
                        .padding(.top, 2)
+                       .searchable(text: $searchText)
+
                    }
                    
                    

@@ -29,13 +29,13 @@ var recettes: [Recette] = [
     ]
 
 var listAmis = [
-    Amis(name: "Wallen", point: 16, conversation: ["Coucou ma biche comment ça va?", "Coucou ça va et toi?"],photoAmis: "wallen"),
-    Amis(name: "Arthur", point: 3, conversation: ["J'ai faiiiiiiim!"], photoAmis: "arthur"),
-    Amis(name: "Ayoub le King", point: 14, conversation: ["Ayouuuuub au secours! J'ai besoin de toi!!!", "Encoreee??????"], photoAmis: "ayoub2"),
-    Amis(name: "Wouiwoui59", point: 5, conversation: [], photoAmis: "eloi"),
-    Amis(name: "Ju'Lille", point: 14, conversation: ["Canon ta photo des gâteaux!"], photoAmis: "julie"),
-    Amis(name: "La Gazelle Peulh", point: 16, conversation: [], photoAmis: "samira"),
-    Amis(name: "Momo la Frite", point: 1, conversation: [], photoAmis: "mohamed")
+    Amis(name: "Wallen", point: 16, conversation: ["Coucou ma biche comment ça va?", "Coucou ça va et toi?"],photoAmis: "wallen", amisCouv: "cook", amisBio: "Je cuisine beaucoup de pâtisseries et de spécialités marocaines mais je veux découvrir d'autres choses.", nmbreRecettes: 3, nmbreAmis: 4),
+    Amis(name: "Arthur", point: 3, conversation: ["J'ai faiiiiiiim!"], photoAmis: "arthur", amisCouv: "tilapia", amisBio: "Ma copine cuisine toujours, je suis pas très bon alors j'aimerai m'amliorer et lui faire une surprise!", nmbreRecettes: 1, nmbreAmis: 8),
+    Amis(name: "Ayoub le King", point: 14, conversation: ["Ayouuuuub au secours! J'ai besoin de toi!!!", "Encoreee??????"], photoAmis: "ayoub2", amisCouv: "crepes", amisBio: "Les crêtes c'est pas spécialité! Je voudrai épater madame avec autre chose!", nmbreRecettes: 2, nmbreAmis: 6),
+    Amis(name: "Wouiwoui59", point: 5, conversation: [], photoAmis: "eloi", amisCouv: "bissap", amisBio: "Je cuisine jamais mais j'aimerai apprendre en jouant.", nmbreRecettes: 0, nmbreAmis: 5),
+    Amis(name: "Ju'Lille", point: 14, conversation: ["Canon ta photo des gâteaux!"], photoAmis: "julie", amisCouv: "carbo", amisBio: "J'aime tout ce qui est végé et healthy, j'espère trouver des copains de cuisine.", nmbreRecettes: 6, nmbreAmis: 6),
+    Amis(name: "La Gazelle Peulh", point: 16, conversation: [], photoAmis: "samira", amisCouv: "poissonbraise", amisBio: "J'adore les spécialités africaines, surtout camerounaises!", nmbreRecettes: 3, nmbreAmis: 3),
+    Amis(name: "Momo la Frite", point: 1, conversation: [], photoAmis: "mohamed", amisCouv: "tale", amisBio: "Je déteste cuisiner, peut être que PlayEat! va me faire apprécier!...", nmbreRecettes: 1, nmbreAmis: 2)
 ]
 
 var profilUser = MonProfil(monNom: "Cindoushka", recettePreferee: favoriteRecipes, nmbreRecettesRealisees: 8, points: 17, classement: 1, nmbreDAmis: 7, recettesRealisees: myPictures, photoDeCouverture: "cuisine", maPhotoDeProfil: "cindoush", commentaire: "J'adore cuisiner, française d'origine italienne, j'aime également la cuisine Africaine. ♡")
@@ -43,6 +43,6 @@ var profilUser = MonProfil(monNom: "Cindoushka", recettePreferee: favoriteRecipe
 var pictures: MesPhotos =
     MesPhotos(maPhoto: "wallen", nmbreDeMiams: 4, recette: recettes[0])
 
-var currentUser = Amis(name: profilUser.monNom, point: profilUser.points, conversation: [""], photoAmis: profilUser.maPhotoDeProfil)
+var currentUser = Amis(name: profilUser.monNom, point: profilUser.points, conversation: [""], photoAmis: profilUser.maPhotoDeProfil, amisCouv: profilUser.photoDeCouverture, amisBio: profilUser.commentaire, nmbreRecettes: profilUser.nmbreRecettesRealisees, nmbreAmis: profilUser.nmbreDAmis)
 
 var listeComplete = listAmis + [currentUser]
